@@ -1,0 +1,31 @@
+.credits-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Occupe toute la hauteur de la page */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.credits-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.credits-page p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.credits-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.credits-page li {
+    font-size: 1rem;
+    margin: 10px 0;
+}
