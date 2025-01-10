@@ -29,19 +29,20 @@ body {
 /* Barre de navigation */
 nav {
   width: 100%;
-  background-color: #333;
+  background: linear-gradient(90deg, #333, #444);
   padding: 10px 20px;
-  position: fixed; /* Fixe la navigation en haut */
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000; /* S'assure que la barre de navigation soit au-dessus */
+  z-index: 1000;
   display: flex;
-  justify-content: space-between; /* Espacement entre les éléments */
-  align-items: center; /* Centre verticalement les éléments */
-  height: 50px; /* Assurez-vous que la hauteur de la navbar est suffisante */
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: Inter, sans-serif;
 }
 
-/* Style pour les liens de navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -50,7 +51,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px; /* Espacement entre les liens */
+  margin-right: 20px;
 }
 
 nav ul li a {
@@ -58,44 +59,41 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 nav ul li a:hover {
   color: #007bff;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Ajuste l'espace pour le contenu principal */
 main {
-  padding-top: 60px; /* Décalage pour éviter que le contenu ne soit caché sous la barre de navigation */
+  padding-top: 60px;
 }
-
-
-
-
 
 
 
 
 /* Style du switch de thème */
 .switch {
+  right: 3vh;
   font-size: 17px;
   position: relative;
   display: inline-block;
   width: 3.5em;
   height: 2em;
-  margin-right: 10px; /* Espace entre le switch et le bord de la barre de navigation */
+  margin-right: 10px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
-  --background: #28096b;
+  --background: #1b1b1b;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -103,7 +101,7 @@ main {
   right: 0;
   bottom: 0;
   background-color: var(--background);
-  transition: .5s;
+  transition: .4s;
   border-radius: 30px;
 }
 
@@ -117,14 +115,14 @@ main {
   bottom: 15%;
   box-shadow: inset 8px -4px 0px 0px #fff000;
   background: var(--background);
-  transition: .5s;
+  transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #522ba7;
+  background-color: #3535e8;
 }
 
 input:checked + .slider:before {
-  transform: translateX(100%);
+  transform: translateX(110%);
   box-shadow: inset 15px -4px 0px 15px #fff000;
 }
